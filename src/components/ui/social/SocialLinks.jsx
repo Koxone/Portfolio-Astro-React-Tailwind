@@ -2,7 +2,7 @@ import React from "react";
 
 function SocialLinks() {
   return (
-    <div className="flex justify-center items-center gap-4 mt-14">
+    <div className="flex justify-center items-center gap-4">
       <a href="https://github.com/Koxone" className="hover:flash">
         <img src="/assets/icons/github.png" alt="GitHub" className="w-9 h-full" />
       </a>

@@ -4,26 +4,18 @@ import MainTitle from "../components/text/titles/MainTitle";
 import Avatar from "../components/ui/avatar/Avatar";
 import SocialLinks from "../components/ui/social/SocialLinks";
 import Card from "../components/ui/cards/Card";
-import ExperienceCard from "../components/ui/cards/ExperienceCard";
+import ExperienceCard from "../components/sections/ExperienceCard.astro";
 import Projects from "../components/sections/Projects.astro";
 import Stack from "../components/sections/Stack.astro";
+import Home from "../components/sections/Home.astro";
 ---
 
 <Layout>
-  <div class="w-full h-full max-w-[calc(100%-5em)] flex flex-col items-center justify-center pt-9 sm:pt-28 pb-8">
-    <section>
-      <MainTitle />
-    </section>
-    <section class="flex flex-col items-center">
-      <Avatar />
-      <SocialLinks />
-      <Card />
-    </section>
-    <section>
-      <ExperienceCard />
-    </section>
-    <Projects/>
+  <div class="w-full h-full max-w-[calc(100%-5em)] flex flex-col items-center justify-center gap-20 pb-16 pt-10">
+    <Home />
+    <ExperienceCard />
+    <Projects />
     <Stack />
-      <SocialLinks />
+    <SocialLinks />
   </div>
 </Layout>

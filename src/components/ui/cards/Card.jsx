@@ -3,7 +3,7 @@ import React from "react";
 function Card() {
   return (
     <div className="">
-      <div className="flex flex-col items-center justify-center max-w-xl w-full p-8 border rounded-2xl text-sm mt-12 text-neutral-200 leading-relaxed text-left">
+      <div className="flex flex-col items-center justify-center p-8 border rounded-2xl text-sm text-neutral-200 leading-relaxed text-left">
         <p>
           Hi there! I'm Carlos De Leon, a software developer
           <span className="text-[#FFD700] font-semibold"> student building user-friendly applications</span>. Throughout
