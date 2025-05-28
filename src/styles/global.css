@@ -258,11 +258,10 @@ body {
 }
 
 .tooltip {
-  @apply absolute bottom-full mb-2 px-2 py-1 rounded-md text-sm font-medium text-white bg-black/80;
+  @apply absolute bottom-full mb-2 px-2 py-1 rounded-md text-sm font-semibold backdrop-blur-md border p-1 transition-all duration-300;
   white-space: nowrap;
   opacity: 0;
   transform: translateY(10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .group:hover .tooltip {
