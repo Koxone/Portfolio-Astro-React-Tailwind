@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+            boxShadow: ['group-hover'],
+      backgroundColor: ['group-hover'],
+      borderColor: ['group-hover'],
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
         pacifico: ['Pacifico', 'cursive'],
