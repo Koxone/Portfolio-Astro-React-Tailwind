@@ -1,0 +1,36 @@
+---
+import ProjectCard from "../ui/cards/ProjectCard.astro";
+import KoxNotes from "../logos/KoxNotes.astro";
+import Shuttle from "../logos/Shuttle.astro";
+---
+
+<section class="flex flex-col items-center mt-20">
+  <div class="flex items-center justify-center w-full py-4 mb-3">
+    <h2 class="text-center text-[#c2c6da] text-3xl font-semibold">Projects</h2>
+  </div>
+
+  <div class="flex flex-col gap-3">
+    <ProjectCard
+      title="KoxNotes"
+      text="KoxNotes is a modern and responsive note-taking application built with Next.js, Firebase Authentication, and Tailwind CSS."
+      url="https://koxnotes.koxland.tech/"
+    >
+      <KoxNotes />
+    </ProjectCard>
+
+    <ProjectCard
+      title="Los Cabos Shuttle"
+      text="Shuttle booking platform for Los Cabos with dynamic pricing and responsive interface built with Astro."
+      url="https://los-cabos-airport-shuttle-224d.vercel.app/"
+    >
+      <Shuttle />
+    </ProjectCard>
+    <ProjectCard
+      title="Wedding Transportation"
+      text="Shuttle booking platform for Los Cabos with dynamic pricing and responsive interface built with Astro."
+      url="https://los-cabos-airport-shuttle-224d.vercel.app/"
+    >
+      <Shuttle />
+    </ProjectCard>
+  </div>
+</section>

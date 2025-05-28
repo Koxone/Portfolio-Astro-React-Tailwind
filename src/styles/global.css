@@ -1,0 +1,318 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Inter";
+}
+
+@layer utilities {
+  @keyframes horizontal {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 200% 0%;
+    }
+  }
+
+  .animate-horizontal {
+    background-image: linear-gradient(270deg, #f76927, #fdfa29, #f76927);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: horizontal 6s ease-in-out infinite;
+    background-repeat: no-repeat;
+  }
+}
+
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+}
+
+.animate-float {
+  animation: float-y 4s ease-in-out infinite;
+}
+
+@layer utilities {
+  @keyframes flash-glow {
+    0% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+  }
+
+  .hover\:flash:hover {
+    animation: flash-glow 1.5s ease-out;
+    border-radius: 9999px;
+  }
+}
+
+@layer utilities {
+  .noise-bg::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("/public/noise.png");
+    background-repeat: repeat;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: -1;
+  }
+}
+
+@keyframes spark {
+  0% {
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+  25% {
+    top: 0;
+    left: 100%;
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    top: 100%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+  }
+  75% {
+    top: 100%;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+}
+@layer utilities {
+  .animate-spark {
+    animation: spark 4s linear infinite;
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #f97316;
+    border-radius: 9999px;
+    box-shadow: 0 0 8px 4px rgba(255, 166, 0, 0.4);
+  }
+}
+
+.icon::after {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 50px;
+  background-image: var(--icon-url);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 16px;
+}
+
+
+/* Componente base reutilizable */
+.glow-card {
+  @apply flex flex-col items-center gap-2 rounded-2xl p-1 cursor-pointer transition-all duration-300;
+}
+
+/* Variantes de colores - Solo cambia estos valores */
+.glow-orange {
+  background-color: rgba(255, 119, 0, 0.2);
+  border: 1px solid rgba(255, 119, 0, 0.3);
+  box-shadow: 0 0 15px rgba(255, 119, 0, 0.3), 0 0 30px rgba(255, 119, 0, 0.15);
+}
+
+.glow-orange:hover {
+  box-shadow: 0 0 20px rgba(255, 119, 0, 0.4), 0 0 40px rgba(255, 119, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.glow-blue {
+  background-color: rgba(59, 130, 246, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.3), 0 0 30px rgba(59, 130, 246, 0.15);
+}
+
+.glow-blue:hover {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.4), 0 0 40px rgba(59, 130, 246, 0.2);
+  transform: scale(1.05);
+}
+
+.glow-yellow {
+  background-color: rgba(251, 191, 36, 0.2);
+  border: 1px solid rgba(251, 191, 36, 0.3);
+  box-shadow: 0 0 15px rgba(251, 191, 36, 0.3), 0 0 30px rgba(251, 191, 36, 0.15);
+}
+
+.glow-yellow:hover {
+  box-shadow: 0 0 20px rgba(251, 191, 36, 0.4), 0 0 40px rgba(251, 191, 36, 0.2);
+  transform: scale(1.05);
+}
+
+.glow-cyan {
+  background-color: rgba(34, 211, 238, 0.2);
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.3), 0 0 30px rgba(34, 211, 238, 0.15);
+}
+
+.glow-cyan:hover {
+  box-shadow: 0 0 20px rgba(34, 211, 238, 0.4), 0 0 40px rgba(34, 211, 238, 0.2);
+  transform: scale(1.05);
+}
+
+.glow-green {
+  background-color: rgba(34, 197, 94, 0.2);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  box-shadow: 0 0 15px rgba(34, 197, 94, 0.3), 0 0 30px rgba(34, 197, 94, 0.15);
+}
+
+.glow-green:hover {
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.4), 0 0 40px rgba(34, 197, 94, 0.2);
+  transform: scale(1.05);
+}
+
+.glow-purple {
+  background-color: rgba(147, 51, 234, 0.2);
+  border: 1px solid rgba(147, 51, 234, 0.3);
+  box-shadow: 0 0 15px rgba(147, 51, 234, 0.3), 0 0 30px rgba(147, 51, 234, 0.15);
+}
+
+.glow-purple:hover {
+  box-shadow: 0 0 20px rgba(147, 51, 234, 0.4), 0 0 40px rgba(147, 51, 234, 0.2);
+  transform: scale(1.05);
+}
+
+.glow-pink {
+  background-color: rgba(236, 72, 153, 0.2);
+  border: 1px solid rgba(236, 72, 153, 0.3);
+  box-shadow: 0 0 15px rgba(236, 72, 153, 0.3), 0 0 30px rgba(236, 72, 153, 0.15);
+}
+
+.glow-pink:hover {
+  box-shadow: 0 0 20px rgba(236, 72, 153, 0.4), 0 0 40px rgba(236, 72, 153, 0.2);
+  transform: scale(1.05);
+}
+
+.glow-white {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2), 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+.glow-white:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3), 0 0 40px rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+}
+
+.glow-red {
+  background-color: rgba(239, 68, 68, 0.2);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.3), 0 0 30px rgba(239, 68, 68, 0.15);
+}
+.glow-red:hover {
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.4), 0 0 40px rgba(239, 68, 68, 0.2);
+  transform: scale(1.05);
+}
+
+.glow-teal {
+  background-color: rgba(13, 148, 136, 0.2);
+  border: 1px solid rgba(13, 148, 136, 0.3);
+  box-shadow: 0 0 15px rgba(13, 148, 136, 0.3), 0 0 30px rgba(13, 148, 136, 0.15);
+}
+.glow-teal:hover {
+  box-shadow: 0 0 20px rgba(13, 148, 136, 0.4), 0 0 40px rgba(13, 148, 136, 0.2);
+  transform: scale(1.05);
+}
+
+.glow-lime {
+  background-color: rgba(132, 204, 22, 0.2);
+  border: 1px solid rgba(132, 204, 22, 0.3);
+  box-shadow: 0 0 15px rgba(132, 204, 22, 0.3), 0 0 30px rgba(132, 204, 22, 0.15);
+}
+.glow-lime:hover {
+  box-shadow: 0 0 20px rgba(132, 204, 22, 0.4), 0 0 40px rgba(132, 204, 22, 0.2);
+  transform: scale(1.05);
+}
+
+.glow-rose {
+  background-color: rgba(244, 63, 94, 0.2);
+  border: 1px solid rgba(244, 63, 94, 0.3);
+  box-shadow: 0 0 15px rgba(244, 63, 94, 0.3), 0 0 30px rgba(244, 63, 94, 0.15);
+}
+.glow-rose:hover {
+  box-shadow: 0 0 20px rgba(244, 63, 94, 0.4), 0 0 40px rgba(244, 63, 94, 0.2);
+  transform: scale(1.05);
+}
+
+.glow-amber {
+  background-color: rgba(245, 158, 11, 0.2);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.3), 0 0 30px rgba(245, 158, 11, 0.15);
+}
+.glow-amber:hover {
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.4), 0 0 40px rgba(245, 158, 11, 0.2);
+  transform: scale(1.05);
+}
+
+.glow-fuchsia {
+  background-color: rgba(192, 38, 211, 0.2);
+  border: 1px solid rgba(192, 38, 211, 0.3);
+  box-shadow: 0 0 15px rgba(192, 38, 211, 0.3), 0 0 30px rgba(192, 38, 211, 0.15);
+}
+.glow-fuchsia:hover {
+  box-shadow: 0 0 20px rgba(192, 38, 211, 0.4), 0 0 40px rgba(192, 38, 211, 0.2);
+  transform: scale(1.05);
+}
+
+.glow-sky {
+  background-color: rgba(14, 165, 233, 0.2);
+  border: 1px solid rgba(14, 165, 233, 0.3);
+  box-shadow: 0 0 15px rgba(14, 165, 233, 0.3), 0 0 30px rgba(14, 165, 233, 0.15);
+}
+.glow-sky:hover {
+  box-shadow: 0 0 20px rgba(14, 165, 233, 0.4), 0 0 40px rgba(14, 165, 233, 0.2);
+  transform: scale(1.05);
+}
+
+.glow-indigo {
+  background-color: rgba(99, 102, 241, 0.2);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.3), 0 0 30px rgba(99, 102, 241, 0.15);
+}
+.glow-indigo:hover {
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.4), 0 0 40px rgba(99, 102, 241, 0.2);
+  transform: scale(1.05);
+}
+
+.glow-slate {
+  background-color: rgba(100, 116, 139, 0.2);
+  border: 1px solid rgba(100, 116, 139, 0.3);
+  box-shadow: 0 0 15px rgba(100, 116, 139, 0.3), 0 0 30px rgba(100, 116, 139, 0.15);
+}
+.glow-slate:hover {
+  box-shadow: 0 0 20px rgba(100, 116, 139, 0.4), 0 0 40px rgba(100, 116, 139, 0.2);
+  transform: scale(1.05);
+}
+
+.glow-zinc {
+  background-color: rgba(113, 113, 122, 0.2);
+  border: 1px solid rgba(113, 113, 122, 0.3);
+  box-shadow: 0 0 15px rgba(113, 113, 122, 0.3), 0 0 30px rgba(113, 113, 122, 0.15);
+}
+.glow-zinc:hover {
+  box-shadow: 0 0 20px rgba(113, 113, 122, 0.4), 0 0 40px rgba(113, 113, 122, 0.2);
+  transform: scale(1.05);
+}
