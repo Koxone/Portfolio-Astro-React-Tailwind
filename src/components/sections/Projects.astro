@@ -3,7 +3,9 @@ import ProjectCard from "../ui/cards/ProjectCard.astro";
 import KoxNotes from "../logos/KoxNotes.astro";
 import Shuttle from "../logos/Shuttle.astro";
 import KoxChat from "../logos/KXChat.astro";
+import TicTacToe from "../logos/TicTacToe.astro";
 import Sacbe from "../logos/Sacbe.astro";
+import PlanetFacts from "../logos/PlanetFacts.astro";
 ---
 
 <section class="flex flex-col items-center gap-8">
@@ -12,6 +14,22 @@ import Sacbe from "../logos/Sacbe.astro";
   </div>
 
   <div class="flex flex-col gap-3">
+    <ProjectCard
+      title="TicTacToe Game"
+      text="A classic turn-based game built with React, Tailwind CSS, and Framer Motion, featuring smooth animations, user turn tracking, and a clean responsive UI. Designed for fun and fast matches with modern frontend technologies."
+      url="https://tictactoe.koxland.dev/"
+    >
+      <TicTacToe />
+    </ProjectCard>
+
+    <ProjectCard
+      title="Planet Facts App"
+      text="A responsive web app built with React and Tailwind CSS, featuring smooth animations and fun, bite-sized facts about each planet in the solar system. Designed to be visually engaging and educational across all devices."
+      url="https://planetfacts.koxland.dev/"
+    >
+      <PlanetFacts />
+    </ProjectCard>
+
     <ProjectCard
       title="KoxNotes"
       text="KoxNotes is a modern and responsive note-taking application built with Next.js, Firebase Authentication, and Tailwind CSS."
