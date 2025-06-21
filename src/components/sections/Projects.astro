@@ -6,20 +6,25 @@ import KoxChat from "../logos/KXChat.astro";
 import TicTacToe from "../logos/TicTacToe.astro";
 import Sacbe from "../logos/Sacbe.astro";
 import PlanetFacts from "../logos/PlanetFacts.astro";
+import Logo from "../logos/Logo.astro";
 ---
 
 <section class="flex flex-col items-center gap-8">
-  <div class="flex items-center justify-center w-full">
-    <h2 class="text-center text-[#c2c6da] text-3xl font-semibold">Projects</h2>
+  <div class="">
+    <h2 class="text-center text-[#c2c6da] text-4xl font-bold mb-2">Projects</h2>
+    <div
+      class="w-24 h-1 bg-gradient-to-r from-orange-400 to-yellow-400 mx-auto rounded-full"
+    >
+    </div>
   </div>
 
-  <div class="flex flex-col gap-3">
+  <div class="flex flex-col gap-3 sm:grid sm:grid-cols-2 sm:gap-5">
     <ProjectCard
       title="TicTacToe Game"
       text="A classic turn-based game built with React, Tailwind CSS, and Framer Motion, featuring smooth animations, user turn tracking, and a clean responsive UI. Designed for fun and fast matches with modern frontend technologies."
       url="https://tictactoe.koxland.dev/"
     >
-      <TicTacToe />
+      <Logo title="TicTacToe Game" src="tictactoe" />
     </ProjectCard>
 
     <ProjectCard
@@ -27,7 +32,7 @@ import PlanetFacts from "../logos/PlanetFacts.astro";
       text="A responsive web app built with React and Tailwind CSS, featuring smooth animations and fun, bite-sized facts about each planet in the solar system. Designed to be visually engaging and educational across all devices."
       url="https://planetfacts.koxland.dev/"
     >
-      <PlanetFacts />
+      <Logo title="Planet Facts" src="planet" />
     </ProjectCard>
 
     <ProjectCard
@@ -35,7 +40,7 @@ import PlanetFacts from "../logos/PlanetFacts.astro";
       text="KoxNotes is a modern and responsive note-taking application built with Next.js, Firebase Authentication, and Tailwind CSS."
       url="https://koxnotes.koxland.dev/"
     >
-      <KoxNotes />
+      <Logo title="KoxNotes" src="Feather" />
     </ProjectCard>
 
     <ProjectCard
@@ -43,7 +48,7 @@ import PlanetFacts from "../logos/PlanetFacts.astro";
       text="KoxChat is a modern, responsive chat application built with React, Firebase, and Tailwind CSS. It features secure user authentication, unique usernames, real-time user search, and a clean, intuitive UI."
       url="https://kxchat.koxland.dev/"
     >
-      <KoxChat />
+      <Logo title="KX Chat" src="kxchat" />
     </ProjectCard>
 
     <!-- <ProjectCard
