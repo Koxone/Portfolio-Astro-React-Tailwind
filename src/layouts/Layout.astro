@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import background from "../assets/background.svg";
 import MainHeader from "../components/ui/headers/MainHeader";
+import Footer from "../components/footer/Footer";
 ---
 
 <!doctype html>
@@ -12,13 +13,29 @@ import MainHeader from "../components/ui/headers/MainHeader";
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="/web-app-manifest-192x192.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="/web-app-manifest-512x512.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/web-app-manifest-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/web-app-manifest-512x512.png"
+    />
     <link rel="icon" type="image/png" href="/Logo.png" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
     <meta name="mobile-web-app-capable" content="yes" />
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,7 +45,9 @@ import MainHeader from "../components/ui/headers/MainHeader";
       rel="stylesheet"
     />
   </head>
-  <body class="bg-gray-900 text-white min-h-screen w-full relative noise-bg flex flex-col items-center justify-center">
+  <body
+    class="bg-gray-900 text-white mb-12 min-h-screen w-full relative noise-bg flex flex-col items-center justify-center"
+  >
     <MainHeader />
     <div class="flex flex-col items-center justify-center w-full max-w-[900px]">
       <slot />
@@ -39,5 +58,6 @@ import MainHeader from "../components/ui/headers/MainHeader";
       class="fixed top-0 left-0 w-full h-full -z-10 blur-[100px]"
       fetchpriority="high"
     />
+    <Footer />
   </body>
 </html>

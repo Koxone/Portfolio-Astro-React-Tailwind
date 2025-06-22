@@ -8,18 +8,30 @@ function MainHeader() {
         src="/logo.png"
         alt=""
       />
-      <div className="flex items-center gap-4 font-[Inter]">
-        <a className="hover:text-[#FFD700]" href="https://resume.koxland.dev/">
+      <div className="flex items-center gap-3 sm:gap-8 sm:text-base text-[14px] font-[Inter]">
+        <a
+          className="hover:text-[#FFD700] hover:scale-125"
+          href="https://resume.koxland.dev/"
+        >
           Resume
         </a>
-        <a className="hover:text-[#FFD700]" href="https://github.com/Koxone">
+        <a
+          className="hover:text-[#FFD700] hover:scale-125"
+          href="https://github.com/Koxone"
+        >
           Github
         </a>
         <a
-          className="hover:text-[#FFD700]"
+          className="hover:text-[#FFD700] hover:scale-125"
           href="https://www.youtube.com/@KoxDeveloper"
         >
           Youtube
+        </a>
+        <a
+          className="hover:text-[#FFD700] hover:scale-125"
+          href="mailto:admin@koxland.net"
+        >
+          Contact
         </a>
       </div>
     </header>
