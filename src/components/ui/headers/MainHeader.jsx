@@ -6,7 +6,7 @@ function MainHeader() {
       <img
         className="w-full h-fit min-w-6 max-w-8 min-h-6 max-h-8 object-contain mr-auto cursor-pointer"
         src="/logo.png"
-        alt=""
+        alt="logo icon"
       />
       <div className="flex items-center gap-3 sm:gap-8 sm:text-base text-[14px] font-[Inter]">
         <a
