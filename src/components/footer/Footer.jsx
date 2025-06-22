@@ -21,7 +21,7 @@ function Footer() {
   };
 
   return (
-    <form className="w-full max-w-[300px] sm:max-w-[300px] mx-auto">
+    <form id="footer" className="w-full max-w-[300px] sm:max-w-[300px] mx-auto">
       <div className="mb-8">
         <h2 className="text-center text-[#c2c6da] text-4xl font-bold mb-2">
           Contact

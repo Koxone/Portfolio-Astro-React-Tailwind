@@ -27,10 +27,7 @@ function MainHeader() {
         >
           Youtube
         </a>
-        <a
-          className="hover:text-[#FFD700] hover:scale-125"
-          href="mailto:admin@koxland.net"
-        >
+        <a className="hover:text-[#FFD700] hover:scale-125" href="#footer">
           Contact
         </a>
       </div>
