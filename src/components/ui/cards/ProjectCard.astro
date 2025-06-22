@@ -8,12 +8,12 @@ const { url = "", title = "", text, component } = Astro.props;
   target="_blank"
   rel="noopener noreferrer"
   class="group relative gap-4 flex flex-col items-center justify-center max-w-xl w-full p-5
-    border border-neutral-500 hover:border-orange-400 rounded-2xl
+    border sm:border-neutral-500 border-orange-400 sm:hover:border-orange-400 rounded-2xl
     text-sm text-neutral-200 leading-relaxed text-left bg-white/10 overflow-hidden transition-all duration-500 ease-in-out transform hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(251,146,60,0.3)]"
 >
   <span
-    class="absolute w-2 h-2 bg-orange-400 rounded-full animate-spark opacity-100 z-20 hidden group-hover:block"
-  />
+    class="absolute w-2 h-2 bg-orange-400 rounded-full animate-spark opacity-100 z-20 sm:hidden sm:group-hover:block"
+  ></span>
 
   <div class="flex items-center gap-3">
     <h2 class="text-2xl text-center font-semibold text-orange-400">{title}</h2>

@@ -2,7 +2,11 @@
 const { title, src } = Astro.props;
 ---
 
-<div class="flex items-center gap-3 mt-1">
-  <img class="max-w-[50px] sm:max-w-auto" src={`/${src}.png`} alt="blue feather icon" />
-  <p class="font-[Pacifico] text-4xl">{title}</p>
+<div class="flex items-center gap-3">
+  <img
+    class="max-w-[50px] sm:max-w-auto"
+    src={`/${src}.png`}
+    alt="blue feather icon"
+  />
+  <p class="whitespace-nowrap font-[Pacifico] text-center text-4xl">{title}</p>
 </div>

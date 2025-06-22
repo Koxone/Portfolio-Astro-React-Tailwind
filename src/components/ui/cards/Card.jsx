@@ -2,8 +2,12 @@ import React from "react";
 
 function Card() {
   return (
-    <div className="">
-      <div className="flex flex-col items-center justify-center p-8 border rounded-2xl text-sm text-neutral-200 leading-relaxed text-left">
+    <div className="relative">
+      <div
+        className="flex flex-col items-center justify-center p-8 rounded-2xl text-sm border text-neutral-200 leading-relaxed text-left group relative gap-4 max-w-xl w-full
+     sm:border-neutral-500 border-orange-400 sm:hover:border-orange-400
+    bg-white/10 overflow-hidden transition-all duration-500 ease-in-out transform hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(251,146,60,0.3)]"
+      >
         <p>
           Hi there! I'm Carlos De Leon, a{" "}
           <span className="text-[#FFD700] font-semibold">
