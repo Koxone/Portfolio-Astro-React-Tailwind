@@ -2,7 +2,6 @@
 
 body {
   font-family: "Inter";
-  min-height: 100dvh;
 }
 
 * {
@@ -184,7 +183,8 @@ body {
 .hover-glow-white:hover {
   background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4), 0 0 40px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4),
+    0 0 40px rgba(255, 255, 255, 0.2);
   transform: scale(1.05);
 }
 
@@ -247,14 +247,16 @@ body {
 .hover-glow-slate:hover {
   background-color: rgba(100, 116, 139, 0.2);
   border: 1px solid rgba(100, 116, 139, 0.3);
-  box-shadow: 0 0 20px rgba(100, 116, 139, 0.4), 0 0 40px rgba(100, 116, 139, 0.2);
+  box-shadow: 0 0 20px rgba(100, 116, 139, 0.4),
+    0 0 40px rgba(100, 116, 139, 0.2);
   transform: scale(1.05);
 }
 
 .hover-glow-zinc:hover {
   background-color: rgba(113, 113, 122, 0.2);
   border: 1px solid rgba(113, 113, 122, 0.3);
-  box-shadow: 0 0 20px rgba(113, 113, 122, 0.4), 0 0 40px rgba(113, 113, 122, 0.2);
+  box-shadow: 0 0 20px rgba(113, 113, 122, 0.4),
+    0 0 40px rgba(113, 113, 122, 0.2);
   transform: scale(1.05);
 }
 
