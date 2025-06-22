@@ -1,7 +1,9 @@
 @import "tailwindcss";
 
-body {
+body,
+html {
   font-family: "Inter";
+  height: 100%;
 }
 
 * {
