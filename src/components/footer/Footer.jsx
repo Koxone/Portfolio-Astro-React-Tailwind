@@ -6,12 +6,13 @@ function Footer() {
 
   const handleCopy = () => {
     if (inputRef.current) {
-      navigator.clipboard.writeText(inputRef.current.value)
+      navigator.clipboard
+        .writeText(inputRef.current.value)
         .then(() => {
           setButtonText("Copied!");
           setTimeout(() => setButtonText("Copy"), 2000);
         })
-        .catch(err => {
+        .catch((err) => {
           console.error("Error al copiar: ", err);
           setButtonText("Error");
           setTimeout(() => setButtonText("Copy"), 2000);
@@ -37,11 +38,11 @@ function Footer() {
         <input
           ref={inputRef}
           readOnly
-          value="admin@koxland.net"
+          value="admin@koxland.com"
           type="text"
           id="clipboard"
           className="block w-full p-4 ps-10 text-sm border rounded-lg focus:ring-orange-400 focus:border-orange-400 bg-gray-700 border-gray-600 placeholder-orange-400 text-white"
-          placeholder="admin@koxland.net"
+          placeholder="admin@koxland.com"
           required
         />
         <button
