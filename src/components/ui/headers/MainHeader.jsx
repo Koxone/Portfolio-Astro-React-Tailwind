@@ -32,7 +32,6 @@ function MainHeader() {
         </a>
         <a
           className="hover:text-[#FFD700] hover:scale-125"
-          target="_blank"
           href="#footer"
         >
           Contact
