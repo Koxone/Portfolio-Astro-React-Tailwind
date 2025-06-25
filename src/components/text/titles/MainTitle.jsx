@@ -7,7 +7,7 @@ function MainTitle() {
         Carlos de Leon
       </h1>
 
-      <h2 class="text-xl font-semibold sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl 
+      <h2 className="text-xl font-semibold sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl 
       2xl:text-4xl text-transparent bg-clip-text animate-horizontal bg-gradient-to-r from-[#F76927] to-[#Fdfa29] text-center">
         Software Engineer...In the making!
       </h2>
