@@ -4,6 +4,7 @@ const { url = "", title = "", text, component } = Astro.props;
 ---
 
 <a
+  id={title.toLowerCase().replace(/\s+/g, "-")}
   href={url}
   target="_blank"
   rel="noopener noreferrer"
