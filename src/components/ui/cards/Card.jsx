@@ -23,7 +23,8 @@ function Card() {
           </span>{" "}
           in the fine dining industry, leading{" "}
           <span className="text-[#FFD700] font-semibold">
-            teams of over 100 people
+            teams of up to 100 people in high-demand environments in
+            coordination with the executive/management team
           </span>{" "}
           and managing{" "}
           <span className="text-[#FFD700] font-semibold">
@@ -31,7 +32,7 @@ function Card() {
           </span>{" "}
           with an average{" "}
           <span className="text-[#FFD700] font-semibold">
-            32% profit margins{" "}
+            30% profit margins{" "}
           </span>
           .
           <br />
