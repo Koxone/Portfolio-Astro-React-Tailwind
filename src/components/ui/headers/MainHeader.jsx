@@ -10,6 +10,7 @@ function MainHeader() {
       />
       <div className="flex items-center gap-3 sm:gap-8 sm:text-base text-[14px] font-[Inter]">
         <a
+          id="resumeAnalitics"
           className="hover:text-[#FFD700] hover:scale-125"
           target="_blank"
           href="https://resume.koxland.dev/"
@@ -17,6 +18,7 @@ function MainHeader() {
           Resume
         </a>
         <a
+          id="githubAnalitics"
           className="hover:text-[#FFD700] hover:scale-125"
           target="_blank"
           href="https://github.com/Koxone"
@@ -30,7 +32,11 @@ function MainHeader() {
         >
           Youtube
         </a>
-        <a className="hover:text-[#FFD700] hover:scale-125" href="#footer">
+        <a
+          id="contactAnalitics"
+          className="hover:text-[#FFD700] hover:scale-125"
+          href="#footer"
+        >
           Contact
         </a>
       </div>
