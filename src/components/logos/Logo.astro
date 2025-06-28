@@ -1,5 +1,5 @@
 ---
-const { title, src } = Astro.props;
+const { title, src, font } = Astro.props;
 ---
 
 <div class="flex items-center gap-3">
@@ -8,5 +8,7 @@ const { title, src } = Astro.props;
     src={`/${src}.png`}
     alt="blue feather icon"
   />
-  <p class="whitespace-nowrap font-[Pacifico] text-center text-4xl">{title}</p>
+  <p class={`whitespace-nowrap font-[${font}] text-center text-4xl`}>
+    {title}
+  </p>
 </div>

@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
-body,
+/* body,
 html {
   font-family: "Inter";
-}
+} */
 
 * {
   transition: all 0.3s ease-in-out;
