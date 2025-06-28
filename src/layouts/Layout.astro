@@ -3,6 +3,7 @@ import "../styles/global.css";
 import background from "../assets/background.svg";
 import MainHeader from "../components/ui/headers/MainHeader";
 import Footer from "../components/footer/Footer";
+import Analytics from "@vercel/analytics/astro";
 ---
 
 <!doctype html>
@@ -84,5 +85,6 @@ import Footer from "../components/footer/Footer";
       fetchpriority="high"
     />
     <Footer client:load />
+    <Analytics />
   </body>
 </html>
