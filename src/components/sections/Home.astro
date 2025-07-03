@@ -3,6 +3,7 @@ import MainTitle from "../text/titles/MainTitle";
 import Avatar from "../ui/avatar/Avatar";
 import SocialLinks from "../ui/social/SocialLinks";
 import Card from "../ui/cards/Card";
+import MatrixText from "../text/titles/MatrixText";
 ---
 
 <section
@@ -11,15 +12,17 @@ import Card from "../ui/cards/Card";
   md:[grid-template-areas:'title_title'_'avatar_social'] md:max-w-[calc(100%-5em)]"
 >
   <div class="md:[grid-area:title]">
-    <MainTitle />
+    <MainTitle client:load />
   </div>
   <div class="flex items-center justify-center
     md:[grid-area:avatar]">
     <Avatar />
   </div>
 
-  <div class="flex flex-col gap-8 items-center justify-center
-    md:[grid-area:social]">
+  <div
+    class="flex flex-col gap-8 items-center justify-center
+    md:[grid-area:social]"
+  >
     <SocialLinks />
     <Card />
   </div>
