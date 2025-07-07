@@ -43,9 +43,9 @@ function MainHeader() {
 
   return (
     <>
-      <header className="border-b border-gray-800 p-8 w-full h-16 flex items-center bg-gray-900">
+      <header className="border-b border-gray-800 py-8 px-5 md:p-8 w-full h-16 flex items-center bg-gray-900">
         <img
-          className="w-full h-fit min-w-6 max-w-8 min-h-6 max-h-8 object-contain mr-auto cursor-pointer"
+          className="w-full h-fit max-w-9  md:max-w-13 max-h-10  md:max-h-15 object-cover mr-auto cursor-pointer"
           src="/logo.png"
           alt="logo icon"
         />
