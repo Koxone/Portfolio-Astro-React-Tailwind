@@ -2,6 +2,7 @@
 import ProjectCard from "../ui/cards/ProjectCard.astro";
 import Sacbe from "../logos/Sacbe.astro";
 import Logo from "../logos/Logo.astro";
+import Fws from "../logos/Fws.astro";
 ---
 
 <section class="flex flex-col items-center gap-8">
@@ -31,13 +32,22 @@ import Logo from "../logos/Logo.astro";
     </ProjectCard>
 
     <ProjectCard
+      title="FitWorld Shop"
+      text="Modern, responsive e-commerce storefront built with Next.js, Tailwind CSS, and Shopify Faceless API. Currently under development, it focuses on clean UI, seamless product browsing, and scalable architecture for high-performance storefronts."
+      url="https://fitworldshop.koxland.dev/"
+      development={true}
+    >
+      <Fws title="FW Shop" src="fws" />
+    </ProjectCard>
+
+    <!-- <ProjectCard
       title="KoxNotes"
       text="KoxNotes is a responsive note-taking web app built with Next.js, Tailwind CSS, and Firebase. It features Google authentication, Firestore persistence, dark/light theme toggle, tagging, archiving, deletion, and real-time search, offering a fast, modern, and organized writing experience."
       url="https://koxnotes.koxland.dev/"
       development={true}
     >
       <Logo title="KoxNotes" src="Feather" font="Pacifico" />
-    </ProjectCard>
+    </ProjectCard> -->
 
     <ProjectCard
       title="KX-Chat"
