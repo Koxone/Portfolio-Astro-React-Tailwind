@@ -15,6 +15,16 @@ import Fws from "../logos/Fws.astro";
   </div>
 
   <div class="flex flex-col gap-3 sm:grid sm:grid-cols-2 sm:gap-5">
+
+    <ProjectCard
+      title="FitWorld Shop"
+      text="Modern, responsive e-commerce storefront built with Next.js, Tailwind CSS, and Shopify Faceless API. Currently under development, it focuses on clean UI, seamless product browsing, and scalable architecture for high-performance storefronts."
+      url="https://fitworldshop.koxland.dev/"
+      development={true}
+    >
+      <Fws title="FW Shop" src="fws" />
+    </ProjectCard>
+
     <ProjectCard
       title="TicTacToe Game"
       text="A classic turn-based game built with React, Tailwind CSS, and Framer Motion, featuring smooth animations, user turn tracking, and a clean responsive UI. Designed for fun and fast matches with modern frontend technologies."
@@ -32,30 +42,12 @@ import Fws from "../logos/Fws.astro";
     </ProjectCard>
 
     <ProjectCard
-      title="FitWorld Shop"
-      text="Modern, responsive e-commerce storefront built with Next.js, Tailwind CSS, and Shopify Faceless API. Currently under development, it focuses on clean UI, seamless product browsing, and scalable architecture for high-performance storefronts."
-      url="https://fitworldshop.koxland.dev/"
+      title="Component Library"
+      text="A React and Tailwind component library featuring live previews, ready-to-use code snippets, and a growing collection of animated UI elements. Browse, preview, and copy components easily to accelerate building beautiful, responsive interfaces for your projects."
+      url="https://components.koxland.dev/"
       development={true}
     >
-      <Fws title="FW Shop" src="fws" />
-    </ProjectCard>
-
-    <!-- <ProjectCard
-      title="KoxNotes"
-      text="KoxNotes is a responsive note-taking web app built with Next.js, Tailwind CSS, and Firebase. It features Google authentication, Firestore persistence, dark/light theme toggle, tagging, archiving, deletion, and real-time search, offering a fast, modern, and organized writing experience."
-      url="https://koxnotes.koxland.dev/"
-      development={true}
-    >
-      <Logo title="KoxNotes" src="Feather" font="Pacifico" />
-    </ProjectCard> -->
-
-    <ProjectCard
-      title="KX-Chat"
-      text="KoxChat is a modern, responsive chat application built with React, Firebase, and Tailwind CSS. It features secure user authentication, unique usernames, real-time user search, and a clean, intuitive UI."
-      url="https://kxchat.koxland.dev/"
-      development={true}
-    >
-      <Logo title="KX Chat" src="kxchat" />
+      <Logo title="Library" src="library" font="Space_Grotesk" />
     </ProjectCard>
 
     <ProjectCard
@@ -75,20 +67,20 @@ import Fws from "../logos/Fws.astro";
     </ProjectCard>
 
     <ProjectCard
-      title="Component Library"
-      text="A React and Tailwind component library featuring live previews, ready-to-use code snippets, and a growing collection of animated UI elements. Browse, preview, and copy components easily to accelerate building beautiful, responsive interfaces for your projects."
-      url="https://components.koxland.dev/"
-      development={true}
-    >
-      <Logo title="Library" src="library" font="Space_Grotesk" />
-    </ProjectCard>
-
-    <ProjectCard
       title="Sacbe Tours"
       text="A modern, responsive web application built with React and Tailwind CSS for booking tours in Mexico and around the world. It features real-time tour availability, dynamic pricing, and a seamless booking flow powered by a custom API, providing users with a clean, intuitive experience across all devices."
       url="https://tours.koxland.dev/"
     >
       <Sacbe />
+    </ProjectCard>
+
+        <ProjectCard
+      title="KX-Chat"
+      text="KoxChat is a modern, responsive chat application built with React, Firebase, and Tailwind CSS. It features secure user authentication, unique usernames, real-time user search, and a clean, intuitive UI."
+      url="https://kxchat.koxland.dev/"
+      development={true}
+    >
+      <Logo title="KX Chat" src="kxchat" />
     </ProjectCard>
   </div>
 </section>
