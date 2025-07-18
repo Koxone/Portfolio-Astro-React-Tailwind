@@ -1,10 +1,5 @@
 @import "tailwindcss";
 
-/* body,
-html {
-  font-family: "Inter";
-} */
-
 * {
   transition: all 0.3s ease-in-out;
   scroll-behavior: smooth;
@@ -184,8 +179,7 @@ html {
 .hover-glow-white:hover {
   background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4),
-    0 0 40px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4), 0 0 40px rgba(255, 255, 255, 0.2);
   transform: scale(1.05);
 }
 
@@ -248,16 +242,14 @@ html {
 .hover-glow-slate:hover {
   background-color: rgba(100, 116, 139, 0.2);
   border: 1px solid rgba(100, 116, 139, 0.3);
-  box-shadow: 0 0 20px rgba(100, 116, 139, 0.4),
-    0 0 40px rgba(100, 116, 139, 0.2);
+  box-shadow: 0 0 20px rgba(100, 116, 139, 0.4), 0 0 40px rgba(100, 116, 139, 0.2);
   transform: scale(1.05);
 }
 
 .hover-glow-zinc:hover {
   background-color: rgba(113, 113, 122, 0.2);
   border: 1px solid rgba(113, 113, 122, 0.3);
-  box-shadow: 0 0 20px rgba(113, 113, 122, 0.4),
-    0 0 40px rgba(113, 113, 122, 0.2);
+  box-shadow: 0 0 20px rgba(113, 113, 122, 0.4), 0 0 40px rgba(113, 113, 122, 0.2);
   transform: scale(1.05);
 }
 
@@ -271,4 +263,24 @@ html {
 .group:hover .tooltip {
   opacity: 1;
   transform: translateY(0);
+}
+.tooltip {
+  position: absolute;
+  top: -2.5rem;
+  transform: translateX(-50%);
+  padding: 0.25rem 0.5rem;
+  white-space: nowrap;
+  background-color: #1f2937;
+  color: white;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  z-index: 20;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out;
+  pointer-events: none;
+}
+.group:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
 }
