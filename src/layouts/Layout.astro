@@ -4,6 +4,7 @@ import background from "../assets/background.svg";
 import MainHeader from "../components/ui/headers/MainHeader";
 import Footer from "../components/footer/Footer";
 import Analytics from "@vercel/analytics/astro";
+import FallingStarsBackground from "../components/ui/background/FallingStarsBackground"
 ---
 
 <!doctype html>
@@ -78,10 +79,11 @@ import Analytics from "@vercel/analytics/astro";
     >
     <MainHeader client:load />
     <main
-      class="flex flex-col items-center justify-center w-full max-w-[900px]"
+      class="flex relative flex-col items-center justify-center w-full max-w-[900px]"
     >
       <slot />
     </main>
+    <FallingStarsBackground />
     <img
       src={background.src}
       alt="background"
