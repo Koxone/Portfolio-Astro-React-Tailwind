@@ -1,0 +1,175 @@
+{
+  "fws": {
+    "projectName": "FitWorld Shop",
+    "description": "Modern and responsive online store, smooth navigation, and scalable architecture. Offers offline support and can be installed on iOS for a seamless, app-like shopping experience.",
+    "images": ["1", "2", "3", "4", "5", "6"],
+    "allImages": [
+      "/fws/1.webp",
+      "/fws/2.webp",
+      "/fws/3.webp",
+      "/fws/4.webp",
+      "/fws/5.webp",
+      "/fws/6.webp",
+      "/fws/7.webp",
+      "/fws/8.webp",
+      "/fws/9.webp",
+      "/fws/10.webp",
+      "/fws/11.webp",
+      "/fws/12.webp"
+    ],
+    "techIcons": [
+      { "src": "/next.svg", "alt": "Next.js" },
+      { "src": "/react.png", "alt": "React" },
+      { "src": "/tailwind.png", "alt": "Tailwind" },
+      { "src": "/shopify.svg", "alt": "Shopify" }
+    ],
+    "links": {
+      "github": {
+        "url": "https://github.com/Koxone/Prueba-FWS-Shopify",
+        "label": "Código"
+      },
+      "demo": {
+        "url": "https://www.fitworldshop.com/",
+        "label": "Demo"
+      }
+    }
+  },
+  "components": {
+    "projectName": "Component Library",
+    "description": "A component library with live previews, ready-to-use UI elements, and npm install support. Browse, preview, and integrate components instantly to speed up your development.",
+    "images": ["1", "2"],
+    "allImages": [
+      "/components/1.webp",
+      "/components/2.webp",
+      "/components/3.webp",
+      "/components/4.webp",
+      "/components/5.webp"
+    ],
+    "techIcons": [
+      { "src": "/react.png", "alt": "React" },
+      { "src": "/tailwind.png", "alt": "Tailwind" },
+      { "src": "/npm.png", "alt": "NPM" }
+    ],
+    "links": {
+      "github": {
+        "url": "https://github.com/Koxone/Components-React-Tailwind",
+        "label": "Código"
+      },
+      "demo": {
+        "url": "https://components.koxland.dev/",
+        "label": "Demo"
+      }
+    }
+  },
+  "tours": {
+    "projectName": "Sacbe Tours",
+    "description": "Modern web app for booking tours worldwide. Offers real-time availability, dynamic pricing, and seamless booking through a custom API. Clean, intuitive, and fully responsive UI.",
+    "images": ["2", "6"],
+    "allImages": [
+      "/tours/1.webp",
+      "/tours/2.webp",
+      "/tours/3.webp",
+      "/tours/4.webp",
+      "/tours/5.webp",
+      "/tours/6.webp",
+      "/tours/7.webp",
+      "/tours/8.webp",
+      "/tours/9.webp",
+      "/tours/10.webp",
+      "/tours/11.webp"
+    ],
+    "techIcons": [
+      { "src": "/next.svg", "alt": "React" },
+      { "src": "/react.png", "alt": "React" },
+      { "src": "/tailwind.png", "alt": "Tailwind" }
+    ],
+    "links": {
+      "github": {
+        "url": "https://github.com/Koxone/sacbe-tours-next-react-tailwind",
+        "label": "Código"
+      },
+      "demo": {
+        "url": "https://tours.koxland.dev/",
+        "label": "Demo"
+      }
+    }
+  },
+  "coupons": {
+    "projectName": "Coupon Generator",
+    "description": "A responsive web app that fetches promotional coupons from an API, lets users explore offers by region, and generate Apple/Google Wallet passes via dynamic integration.",
+    "images": ["5", "6", "7"],
+    "allImages": [
+      "/coupons/1.webp",
+      "/coupons/2.webp",
+      "/coupons/3.webp",
+      "/coupons/4.webp",
+      "/coupons/5.webp",
+      "/coupons/6.webp",
+      "/coupons/7.webp",
+      "/coupons/8.webp"
+    ],
+    "techIcons": [
+      { "src": "/react.png", "alt": "React" },
+      { "src": "/tailwind.png", "alt": "Tailwind" },
+      { "src": "/apple.webp", "alt": "Tailwind" },
+      { "src": "/google.svg", "alt": "Tailwind" }
+    ],
+    "links": {
+      "github": {
+        "url": "https://github.com/Koxone/Sacbe-Coupon-Generator-React-Tailwind",
+        "label": "Código"
+      },
+      "demo": {
+        "url": "https://discounts.sacbetransfers.com/",
+        "label": "Demo"
+      }
+    }
+  },
+  "tictactoe": {
+    "projectName": "TicTacToe Game",
+    "description": "Turn-based game with smooth animations, turn tracking, and responsive UI. Play quick matches with modern tech. Fully PWA-ready with offline support and iOS install for an app-like experience.",
+    "images": ["1", "2", "3"],
+    "allImages": [
+      "/tictactoe/1.webp",
+      "/tictactoe/2.webp",
+      "/tictactoe/3.webp",
+      "/tictactoe/4.webp",
+      "/tictactoe/5.webp"
+    ],
+    "techIcons": [
+      { "src": "/react.png", "alt": "React" },
+      { "src": "/tailwind.png", "alt": "Tailwind" },
+      { "src": "/framer.svg", "alt": "Tailwind" }
+    ],
+    "links": {
+      "github": {
+        "url": "https://github.com/Koxone/Sacbe-Coupon-Generator-React-Tailwind",
+        "label": "Código"
+      },
+      "demo": {
+        "url": "https://discounts.sacbetransfers.com/",
+        "label": "Demo"
+      }
+    }
+  },
+  "tetris": {
+    "projectName": "Tetris Game",
+    "description": "Retro-style Tetris game, made with Vanilla Javascript, with real-time controls, smooth movement, line-clearing, scoring, timer, and sound effects.",
+    "images": ["1", "2"],
+    "allImages": ["/tetris/1.webp", "/tetris/2.webp"],
+    "techIcons": [
+      { "src": "/js.png", "alt": "React" },
+      { "src": "/tailwind.png", "alt": "Tailwind" }
+    ],
+    "links": {
+      "github": {
+        "url": "https://github.com/Koxone/Tetris-Tailwind-Javascript",
+        "label": "Código"
+      },
+      "demo": {
+        "url": "https://tetris.koxland.dev/",
+        "label": "Demo"
+      }
+    }
+  }
+}

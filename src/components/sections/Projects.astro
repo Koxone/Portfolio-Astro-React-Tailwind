@@ -1,8 +1,10 @@
 ---
-import ProjectCard from "../ui/cards/ProjectCard.astro";
-import Sacbe from "../logos/Sacbe.astro";
-import Logo from "../logos/Logo.astro";
-import Fws from "../logos/Fws.astro";
+import ProjectCard from '../ui/cards/ProjectCard.astro';
+import Sacbe from '../logos/Sacbe.astro';
+import Logo from '../logos/Logo.astro';
+import Fws from '../logos/Fws.astro';
+import NewProjectCard from '../ui/cards/NewProjectCard';
+import projectData from '../../data/data.json';
 ---
 
 <section class="flex flex-col items-center gap-8">
@@ -14,8 +16,7 @@ import Fws from "../logos/Fws.astro";
     </div>
   </div>
 
-  <div class="flex flex-col gap-3 sm:grid sm:grid-cols-2 sm:gap-5">
-
+  <div class="flex flex-col lg:hidden gap-3 sm:grid sm:grid-cols-2 sm:gap-5">
     <ProjectCard
       title="FitWorld Shop"
       text="Modern, responsive e-commerce storefront built with Next.js, Tailwind CSS, and the Shopify Storefront API. Designed with a clean UI, seamless product browsing, and a scalable architecture optimized for high performance. Fully PWA-ready, including offline support and iOS 'Add to Home Screen' installation for an app-like experience."
@@ -74,7 +75,7 @@ import Fws from "../logos/Fws.astro";
     >
       <Logo title="Tetris Game" src="tetris" />
     </ProjectCard>
-<!-- 
+    <!-- 
         <ProjectCard
       title="KX-Chat"
       text="KoxChat is a modern, responsive chat application built with React, Firebase, and Tailwind CSS. It features secure user authentication, unique usernames, real-time user search, and a clean, intuitive UI."
@@ -83,5 +84,44 @@ import Fws from "../logos/Fws.astro";
     >
       <Logo title="KX Chat" src="kxchat" />
     </ProjectCard> -->
+  </div>
+
+  <div class="hidden lg:flex flex-col gap-5">
+    <NewProjectCard
+      project={projectData.fws}
+      visibleCount={3}
+      folder="fws"
+      client:load
+    />
+    <NewProjectCard
+      project={projectData.tours}
+      visibleCount={2}
+      folder="tours"
+      client:load
+    />
+    <NewProjectCard
+      project={projectData.coupons}
+      visibleCount={3}
+      folder="coupons"
+      client:load
+    />
+    <NewProjectCard
+      project={projectData.components}
+      visibleCount={2}
+      folder="components"
+      client:load
+    />
+    <NewProjectCard
+      project={projectData.tictactoe}
+      visibleCount={3}
+      folder="tictactoe"
+      client:load
+    />
+    <NewProjectCard
+      project={projectData.tetris}
+      visibleCount={2}
+      folder="tetris"
+      client:load
+    />
   </div>
 </section>
