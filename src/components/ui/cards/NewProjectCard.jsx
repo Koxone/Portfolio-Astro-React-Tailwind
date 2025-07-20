@@ -80,7 +80,7 @@ function NewProjectCard({ project, folder, visibleCount }) {
         {/* Texto y tecnologías */}
         <div className="max-h-[300px] w-[40%] space-y-2 overflow-y-auto">
           <div className="flex flex-col gap-2">
-            <span className="bg-gradient-to-r from-[#F76927] to-[#Fdfa29] bg-clip-text text-left font-mono text-xl leading-6 font-semibold whitespace-pre-wrap text-transparent md:text-2xl">
+            <span className="font-inter bg-gradient-to-r from-[#F76927] to-[#Fdfa29] bg-clip-text text-left text-xl leading-6 font-semibold whitespace-pre-wrap text-transparent md:text-2xl">
               {projectName}
             </span>
             <p className="text-sm text-gray-300">{description}</p>
