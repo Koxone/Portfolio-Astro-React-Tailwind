@@ -6,7 +6,7 @@ function SocialLinks() {
       <a
         href="/resume.pdf"
         download
-        className="hover:flash cursor-pointer border px-2 py-1.5 rounded-[9999px] bg-white text-black font-medium"
+        className="hover:flash hidden lg:block cursor-pointer border px-2 py-1.5 rounded-[9999px] bg-white text-black font-medium"
       >
         Download Resume
       </a>
