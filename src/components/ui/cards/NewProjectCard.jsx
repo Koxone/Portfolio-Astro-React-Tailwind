@@ -152,16 +152,21 @@ function NewProjectCard({ project, folder, visibleCount }) {
             {/* Left Chevron */}
             <button
               onClick={showPrev}
-              className="absolute top-1/2 left-2 z-10 -translate-y-1/2 rounded-full bg-black/60 px-4 py-2 text-4xl text-white hover:bg-black/80"
+              className="absolute top-1/2 left-2 z-10 flex h-10 w-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-black/60 text-2xl text-white hover:bg-black/80"
             >
-              ‹
+              <img src="/chevron-left.png" alt="chevron icon" className="w-3" />
             </button>
+
             {/* Right Chevron */}
             <button
               onClick={showNext}
-              className="absolute top-1/2 right-2 z-10 -translate-y-1/2 rounded-full bg-black/60 px-4 py-2 text-4xl text-white hover:bg-black/80"
+              className="absolute top-1/2 right-2 z-10 flex h-10 w-10 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-black/60 text-2xl text-white hover:bg-black/80"
             >
-              ›
+              <img
+                src="/chevron-right.png"
+                alt="chevron icon"
+                className="w-3"
+              />
             </button>
           </div>
         </div>
