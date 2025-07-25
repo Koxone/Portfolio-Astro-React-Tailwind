@@ -38,12 +38,12 @@ function Footer() {
         <input
           ref={inputRef}
           readOnly
-          value="admin@koxland.com"
+          value="admin@koxland.net"
           type="text"
           id="clipboard"
           className="block w-full p-4 ps-10 text-sm border rounded-lg focus:ring-orange-400 focus:border-orange-400 bg-gray-700 border-orange-400
            placeholder-orange-400 text-orange-500"
-          placeholder="admin@koxland.com"
+          placeholder="admin@koxland.net"
           required
         />
         <button
