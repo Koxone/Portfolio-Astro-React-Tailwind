@@ -21,7 +21,8 @@
       { "src": "/next.svg", "alt": "Next.js" },
       { "src": "/react.png", "alt": "React" },
       { "src": "/tailwind.png", "alt": "Tailwind" },
-      { "src": "/shopify.svg", "alt": "Shopify" }
+      { "src": "/shopify.svg", "alt": "Shopify" },
+      { "src": "/firebase.png", "alt": "Firebase" }
     ],
     "links": {
       "github": {
