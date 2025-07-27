@@ -65,7 +65,11 @@ function NewProjectCard({ project, folder, visibleCount }) {
         <span className="animate-spark absolute z-20 h-2 w-2 max-w-[50px] rounded-full bg-orange-400 opacity-100 sm:hidden sm:group-hover:block"></span>
 
         {/* Imágenes del grid */}
-        <div className="flex h-full w-full items-center justify-between rounded-2xl bg-gradient-to-b from-[#0a0a1f] via-[#1c1c40] to-[#2a1446] px-2 py-2">
+        <div
+          className={`flex h-full w-full items-center rounded-2xl bg-gradient-to-b from-[#0a0a1f] via-[#1c1c40] to-[#2a1446] px-2 py-2 ${
+            visibleImages.length === 1 ? 'justify-center' : 'justify-between'
+          }`}
+        >
           {visibleImages.map((img, i) => (
             <img
               key={img}

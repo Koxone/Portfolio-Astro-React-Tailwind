@@ -15,7 +15,8 @@
       "/fws/9.webp",
       "/fws/10.webp",
       "/fws/11.webp",
-      "/fws/12.webp"
+      "/fws/12.webp",
+      "/fws/13.webp"
     ],
     "techIcons": [
       { "src": "/next.svg", "alt": "Next.js" },
